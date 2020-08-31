@@ -82,6 +82,12 @@ button:not(.si-button),
   z-index: -1;
   top: 0;
   right: 0;
+  fill:var(--brightRed);
+}
+.bg-desktop{
+  position: absolute;
+  height:200vh;
+  z-index: -1;
 }
 button.buttons.hn-button.py-2.px-4.d-none.d-md-block.my-md-auto {
   width: 200px;
@@ -91,7 +97,7 @@ button.buttons.hn-button.py-2.px-4.d-none.d-md-block.my-md-auto {
     position: relative;
     margin: 1em;
     z-index: 0;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
   }
 }
@@ -247,6 +253,12 @@ button.buttons.hn-button.py-2.px-4.d-none.d-md-block.my-md-auto {
   transform: scaleX(1.4);
   margin: 10px;
 }
+.brand-color{
+  fill:white;
+}
+.brand-color:hover{
+  fill:var(--brightRed);
+}
 @media only screen and (min-width: 576px) {
   .translateToCenter {
     transform: translate(45vw, 0%);
@@ -276,6 +288,14 @@ button.buttons.hn-button.py-2.px-4.d-none.d-md-block.my-md-auto {
 }
 .si-button {
   color: var(--brightRed);
+}
+.error-msg{
+  display: none;
+  color:var(--brightRed);
+  text-align: left;
+}
+.f-email:invalid + .error-msg{
+  display: block;
 }
 /*____Footer____*/
 .section5-footer {
